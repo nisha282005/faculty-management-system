@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports</title>
+  <link rel="stylesheet" href="../css/reports.css">
+</head>
+<body>
+ <div id="header"></div>
+
+  <main class="report-container">
+    <h2>Staff Attendance Reports</h2>
+
+    <!-- Filters -->
+    <div class="filters">
+      <label for="staffSelect">Select Staff:</label>
+      <select id="staffSelect">
+        <option value="all">All Staff</option>
+        <option value="john">John Smith</option>
+        <option value="mary">Mary Johnson</option>
+        <option value="david">David Lee</option>
+      </select>
+
+      <label for="dateFrom">From:</label>
+      <input type="date" id="dateFrom">
+
+      <label for="dateTo">To:</label>
+      <input type="date" id="dateTo">
+
+      <button onclick="filterReports()">Filter</button>
+    </div>
+
+    <!-- Summary Cards -->
+    <section class="summary">
+      <div class="card">
+        <h3>Total Staff</h3>
+        <p id="totalStaff">3</p>
+      </div>
+      <div class="card">
+        <h3>Average Attendance</h3>
+        <p id="avgAttendance">92%</p>
+      </div>
+      <div class="card">
+        <h3>Total Absentees</h3>
+        <p id="totalAbsentees">5</p>
+      </div>
+    </section>
+
+    <!-- Report Table -->
+    <section class="report-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Staff Name</th>
+            <th>Total Days</th>
+            <th>Present</th>
+            <th>Absent</th>
+            <th>Attendance %</th>
+          </tr>
+        </thead>
+        <tbody id="reportBody">
+          <!-- Filled dynamically with JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="../script/reports.js"></script>
+  <script src="../script/fetch.js"></script>
+</body>
+</html>

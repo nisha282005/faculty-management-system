@@ -1,0 +1,148 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Main Container */
+.attendance-container {
+  flex: 1;
+  padding: 20px;
+  padding-top: 100px; /* ✅ ensures content starts below header */
+  overflow-y: auto;
+}
+
+
+.attendance-header {
+  margin-bottom: 15px;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+.controls button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background:  #3b2e2e;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #bbb;
+}
+
+/* Staff List */
+.staff-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 15px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.staff-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hide Scrollbar */
+.staff-list::-webkit-scrollbar {
+  display: none;
+}
+.staff-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #3b2e2e;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background:  #bbb;
+}
+
+
+/* Add spacing below header */
+header {
+  margin-bottom: 20px; /* 👈 this gives space between header and content */
+}
+
+/* View History button */
+.history-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background:  #3b2e2e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.history-btn:hover {
+  background: #bbb;
+}
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.filters input, .filters button {
+  padding: 8px;
+  border: 1px solid #3b2e2e;
+   background-color: #3b2e2e;
+   color: #fff;
+   font-weight: bold;
+  border-radius: 6px;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.attendance-table th, .attendance-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.attendance-table th {
+  background:#3b2e2e;
+    color: #fff;
+}
+.attendance-actions {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px;
+}
+.submit-btn, .history-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

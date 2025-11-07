@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #3b2e2e;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.staff-select {
+  margin: 20px;
+  text-align: center;
+}
+
+#timetable-container {
+  margin: 20px auto;
+  width: 90%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background: #eee;
+}
+
+.form-container {
+  margin: 20px auto;
+  width: 300px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.form-container h3 {
+  text-align: center;
+}
+
+.form-container label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.form-container input, 
+.form-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background: #3b2e2e;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background:  #3b2e2e;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+}
+
+footer button {
+  padding: 10px 15px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background: #555;
+}

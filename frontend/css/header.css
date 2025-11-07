@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fffaf0; /* light beige background */
+    line-height: 1.6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar - Fixed */
+.navbar {
+    background:  #3b2e2e; /* beige brown */
+    color: #3b2e2e;
+    padding: 15px 20px;
+    display: flex;              /* 🔹 Flexbox */
+    justify-content: space-between; /* 🔹 Left & right */
+    align-items: center;        /* 🔹 Vertically centered */
+    position: fixed;     
+    top: 0;              
+    left: 0;
+    width: 100%;         
+    z-index: 1000;       
+    text-align: left; /* override center */
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #ffff; /* white text */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;   /* 🔹 Arrange links horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    color: #ffff;              /* White text */
+    text-decoration: none;
+    font-weight: bold; 
+   
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffff;              /* Stay white on hover */
+    text-decoration: underline; /* 🔹 Underline effect on hover */
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;        /* makes it a circle */
+  border: 2px solid #fff;    /* white frame */
+  object-fit: cover;         /* crop nicely inside circle */
+  margin-right: 8px;
+}
+
+
+
+.navbar h1 {
+  font-size: 20px;  /* smaller text */
+  margin: 0;
+}

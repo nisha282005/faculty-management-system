@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Attendance</title>
+  <link rel="stylesheet" href="../css/attendance.css">
+</head>
+<body>
+
+    <div id="header"></div>
+
+  <!-- Attendance Section -->
+  <main class="attendance-container">
+    <h2>Staff Attendance</h2>
+
+    <!-- Date Picker -->
+    <div class="attendance-header">
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" required>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button onclick="markAll(true)">Mark All Present</button>
+      <button onclick="markAll(false)">Mark All Absent</button>
+    </div>
+
+    <!-- Staff List -->
+    <div class="staff-list" id="staffList">
+      <!-- JS will generate staff checkboxes here -->
+    </div>
+
+    <!-- Submit -->
+    <button class="submit-btn" onclick="submitAttendance()">Submit Attendance</button>
+    <button class="history-btn" onclick="viewHistory()">View Overall History</button>
+  </main>
+
+
+  <script src="../script/attendance.js"></script>
+  <script src="../script/fetch.js"></script>                                        
+</body>
+</html>

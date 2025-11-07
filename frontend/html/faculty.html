@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="../css/faculty.css">
+
+<section class="faculty">
+  <h2>Faculty Management</h2>
+
+  <!-- Button Row -->
+  <div class="btn-row">
+    <button class="btn" onclick="openForm()">Add Faculty</button>
+    <a href="index.html"><button class="btn"> Back to Home</button></a>
+  </div>
+
+  <!-- Faculty Table -->
+  <table id="facultyTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Email</th>
+        <th style="text-align:center;">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>Dr. Meena</td>
+        <td>CSE</td>
+        <td>meena@college.com</td>
+        <td style="text-align:center;">
+          <button class="btn-sm" onclick="editFaculty(this)">Edit</button>
+          <button class="btn-sm danger" onclick="deleteFaculty(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Faculty Form Modal -->
+<div id="facultyForm" class="modal">
+  <div class="modal-content">
+    <h3>Add Faculty</h3>
+    <label>ID</label>
+    <input type="text" id="facultyId" placeholder="Enter ID">
+    <label>Name</label>
+    <input type="text" id="facultyName" placeholder="Enter Name">
+    <label>Department</label>
+    <input type="text" id="facultyDept" placeholder="Enter Department">
+    <label>Email</label>
+    <input type="email" id="facultyEmail" placeholder="Enter Email">
+    
+    <div style="margin-top:15px;">
+      <button class="btn" onclick="saveFaculty()">Save</button>
+      <button class="btn danger" onclick="closeForm()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+
+<script src="../script/faculty.js"></script>

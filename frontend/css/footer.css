@@ -1,0 +1,12 @@
+/* Footer */
+.footer {
+    background: #3b2e2e;  /* beige brown */
+    color:  #ffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+}

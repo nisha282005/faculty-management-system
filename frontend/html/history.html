@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance History</title>
+  <link rel="stylesheet" href="../css/attendance.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="attendance-container">
+    <h2>Attendance History</h2>
+
+    <!-- Filters -->
+    <div class="filters">
+      <input type="text" id="filterId" placeholder="Filter by Staff ID">
+      <input type="text" id="filterName" placeholder="Filter by Name">
+      <input type="date" id="filterDate">
+      <button onclick="applyFilters()">Apply</button>
+      <button onclick="resetFilters()">Reset</button>
+    </div>
+
+    <!-- Table -->
+    <table class="attendance-table">
+      <thead>
+        <tr>
+          <th>Staff ID</th>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="historyTableBody"></tbody>
+    </table>
+  </main>
+
+ 
+  <script src="../script/history.js"></script>
+  <script src="../script/fetch.js"></script>
+</body>
+</html>

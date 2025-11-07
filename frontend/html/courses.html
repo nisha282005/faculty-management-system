@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Module</title>
+  <link rel="stylesheet" href="../css/courses.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <!-- Course Cards -->
+  <main>
+    <div class="course-container">
+      <div class="course-card">
+        <h3>B.Tech Computer Science</h3>
+        <p>Learn the fundamentals of computing.</p>
+        <button class="btn" onclick="openModal('CSE101','B.Tech Computer Science')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>B.Tech IT</h3>
+        <p>Focus on software and systems.</p>
+        <button class="btn" onclick="openModal('IT102','B.Tech IT')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>B.Tech ECE</h3>
+        <p>Electronics & Communication.</p>
+        <button class="btn" onclick="openModal('ECE103','B.Tech ECE')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>B.Tech Mechanical</h3>
+        <p>Mechanical engineering concepts.</p>
+        <button class="btn" onclick="openModal('ME104','B.Tech Mechanical')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>B.Tech Civil</h3>
+        <p>Structural & civil engineering.</p>
+        <button class="btn" onclick="openModal('CE105','B.Tech Civil')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>B.Sc Mathematics</h3>
+        <p>Mathematical theories & models.</p>
+        <button class="btn" onclick="openModal('MATH106','B.Sc Mathematics')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>B.Sc Physics</h3>
+        <p>Physics fundamentals & research.</p>
+        <button class="btn" onclick="openModal('PHY107','B.Sc Physics')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>B.Sc Chemistry</h3>
+        <p>Chemistry & lab experiments.</p>
+        <button class="btn" onclick="openModal('CHE108','B.Sc Chemistry')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>BBA</h3>
+        <p>Business Administration basics.</p>
+        <button class="btn" onclick="openModal('BBA109','BBA')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>MBA</h3>
+        <p>Master of Business Administration.</p>
+        <button class="btn" onclick="openModal('MBA110','MBA')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>MBA</h3>
+        <p>Master of Business Administration.</p>
+        <button class="btn" onclick="openModal('MBA111','MBA')">View Details</button>
+      </div>
+
+      <div class="course-card">
+        <h3>MBA</h3>
+        <p>Master of Business Administration.</p>
+        <button class="btn" onclick="openModal('MBA112','MBA')">View Details</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="courseModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="courseTitle"></h2>
+      <p><strong>Course Code:</strong> <span id="courseCode"></span></p>
+      <p><strong>Total Seats:</strong> 60</p>
+
+      <div class="staff-list">
+        <p><strong>Staff List:</strong></p>
+        <div class="staff-item">
+          <img src="../assets/female1.png" alt="Staff">
+          <div class="staff-info">
+            <strong>Dr. Meena</strong>
+            Professor
+          </div>
+        </div>
+        <div class="staff-item">
+          <img src="../assets/male.png" alt="Staff">
+          <div class="staff-info">
+            <strong>Mr. Raj</strong>
+            Assistant Professor
+          </div>
+        </div>
+        <div class="staff-item">
+          <img src="../assets/female.png" alt="Staff">
+          <div class="staff-info">
+            <strong>Ms. Priya</strong>
+            Lecturer
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="../script/course.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Faculty Section */
+.faculty {
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #f9f6f1, #f0e8e0); /* soft gradient */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.faculty h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #2c2c2c;
+  position: relative;
+}
+
+
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* Table Head */
+table th {
+  background: #3b2e2e;
+  color: #fff;
+  padding: 14px 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Table Cells */
+table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  transition: background 0.3s;
+}
+
+/* Row Hover */
+table tr:hover td {
+  background: #f6f1eb;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #3b2e2e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Small Buttons */
+.btn-sm {
+  padding: 6px 14px;
+  margin-right: 6px;
+  background: #3b2e2e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-sm:hover {
+  background: #000;
+  transform: scale(1.05);
+}
+
+/* Danger Button */
+.btn-sm.danger {
+  background: #b33939;
+}
+
+.btn-sm.danger:hover {
+  background: #a00;
+}
+
+/* Modal Style */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+.btn-row {
+  display: flex;
+  justify-content: space-between; /* Left + Right alignment */
+  align-items: center;
+  margin-bottom: 20px;
+}
